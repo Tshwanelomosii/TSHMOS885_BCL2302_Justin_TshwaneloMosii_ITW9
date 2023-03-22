@@ -6,16 +6,33 @@ h1 {
     text-align: center;
 }
     
- header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap:10px;
+ .header-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
     background-color: rgb(149, 173, 172);
 }
+
+.profile{
+    padding: 10px;
+    padding-top: 30px;
+    flex:1;
+  }
+  
+  .myname{
+    padding-left: 10px;
+    flex:1;
+  }
+  
+  .paragraph{
+    padding: 10px;
+    flex:1;
+  }
+  
 .navbar {
     display: flex;
    justify-content: space-evenly;
-   background-color: coral;
+   background-color:white;
    position: fixed;
    width: 100%;
    top:0%;
@@ -24,12 +41,12 @@ h1 {
 
 a:hover{
     font-size: larger;
-    color: orange;
+    color: red;
 }
 
 .pic{
     border-radius: 50%;
-    padding: 15px;
+    background-color: bisque;
     /* removed grid row-start */
 }
 
@@ -47,6 +64,7 @@ body {
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap:10px;
+ margin: 10px;
  
 
 }
@@ -90,9 +108,9 @@ body {
 
 
 @media  screen and (max-width:600px) {
-    header{
+    .header-container{
         font-size: small;
-        display: contents;
+        
         
     }
     
@@ -102,20 +120,20 @@ body {
     .footer{
         display: contents;
     }
-.pic{
-    width: 150px;
-    height: 150px;
+img{
+    width: 120px;
+    height: 120px;
 }
 h1{
-    font-size: x-large;
+    font-size: 25px;
 }
 
 }
 /* tablet */
 @media screen and  (min-width:601px) and (max-width:800px) {
-header{
+.paragraph{
     font-size: medium;
-    display: contents;
+    
 }
 
 body{
@@ -125,11 +143,11 @@ body{
         display: contents;
     }
 .pic{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 h1{
-    font-size: 60px;
+    font-size: 40px;
 }
 
 }
