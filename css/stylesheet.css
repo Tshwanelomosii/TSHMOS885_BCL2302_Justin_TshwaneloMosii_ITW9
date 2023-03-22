@@ -30,8 +30,7 @@ a:hover{
 .pic{
     border-radius: 50%;
     padding: 15px;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    /* removed grid row-start */
 }
 
 body {
@@ -42,14 +41,8 @@ body {
 }
 
 
-.contacts {
-    padding:10px;
-   flex: 1;
-}
-.form{
- padding: 10px;
-    flex: 1;
-}
+
+
 .gridcontainer{
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -77,16 +70,28 @@ body {
     border-bottom: 10px solid;
     padding:10px;
 }
+
+/* footer */
+.contacts {
+    padding:10px;
+   flex: 1;
+}
 .footer {
     display: flex;
     justify-content: space-evenly;
+}
+
+.form{
+    padding: 10px;
+       flex: 1;
+   }
 
     /* mobilephone */
-}
+
 
 @media  screen and (max-width:600px) {
     header{
-       
+        font-size: small;
         display: contents;
         
     }
@@ -107,8 +112,9 @@ h1{
 
 }
 /* tablet */
-@media screen and  (max-width:800px) {
+@media screen and  (min-width:601px) and (max-width:800px) {
 header{
+    font-size: medium;
     display: contents;
 }
 
@@ -123,7 +129,7 @@ body{
     height: 200px;
 }
 h1{
-    font-size: x-large;
+    font-size: 60px;
 }
 
 }
